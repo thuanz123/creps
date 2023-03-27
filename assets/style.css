@@ -13,3 +13,23 @@
 .swiper-slide img {
   width: 100%;
 }
+split {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#split1 {
+  background: #fff;
+}
+
+#split2 {
+  background: #fff;
+}
+
+#split3 {
+  background: #fff;
+}
+
+#split4 {
+  background: #fff;
+}

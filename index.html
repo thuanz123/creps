@@ -173,11 +173,6 @@
 						margin-left: auto;
 						margin-right: auto;
         }
-        .teaser-gif {
-						display: block;
-						margin-left: auto;
-						margin-right: auto;
-        }
         .summary-img {
             width: 100%;
 						display: block;
@@ -285,11 +280,11 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <p>The typical architecture for unconditional image synthesis utilizes a coarse-to-fine design with 3x3 convolution and upsampling layers, which opts for for image quality and sacrifices geometric invariance, especially scaling. Furthermore, they treat image generation as a fixed-size synthesis task.</p>
-                <img src="assets/previous_works.svg" style="width:100%;">
+                <img src="assets/previous_works.svg" style="width:90%;">
               </div>
               <div class="swiper-slide">
                 <p>Whereas, we treat an image as a continuous 2D surface, where real images and synthesized samples correspond to discretizations of this surface. We further decompose 2d grid into what we call a "bi-line" representation and opt for INR-based design instead of coarse-to-fine one. Our method is <strong>strongly</strong> consistent and efficient by design, while maintain a <strong>high</strong> quality of the output.</p>
-                <img src="assets/creps.svg" style="width:100%;">
+                <img src="assets/creps.svg" style="width:90%;">
               </div>
             </div>
             <br><br>
@@ -297,13 +292,38 @@
           </div>
         </div>
         <hr>
-        <img class='summary-img' src='assets/qualitative.jpg'></img>
-        <p style="text-align: center;">By setting the coordinate grid appropriately, our generator is capable of synthesizing with various geometric configurations such as translation, zooming in/out, rotation or distortion. 
-        </p>
-        <br>
+        <p style="text-align: center;">By setting the coordinate grid appropriately, our generator is capable of synthesizing with various geometric configurations such as translation, zooming in/out, rotation or distortion.</p>
+        <split id="split1"> 
+          <center>
+            <video width="380" height="380" autoplay muted loop>
+              <source src="assets/translate_ffhq.mp4" type="video/mp4">
+            </video> 
+          </center>
+        </split>
+        <split id="split2">
+          <center>
+            <video width="380" height="380" autoplay muted loop>
+              <source src="assets/translate_ffhq.mp4" type="video/mp4">
+            </video> 
+          </center>
+        </split>
+        <split id="split3"> 
+          <center>
+            <video width="380" height="380" autoplay muted loop>
+              <source src="assets/rotate_metface.mp4" type="video/mp4">
+            </video> 
+          </center>
+        </split>
+        <split id="split4">
+          <center>
+            <video width="380" height="380" autoplay muted loop>
+              <source src="assets/distort_afhqdog.mp4" type="video/mp4">
+            </video> 
+          </center> 
+        </split> 
         <hr>
+        <p style="text-align: center;">Comparison of CREPS high-resolution image synthesis with Lanzcos upsampling on FFHQ. As can be seen, CREPS outperforms traditional upsampling methods despite not being trained on super-resolution task.
         <img class='summary-img' src='assets/sup_highres_crop.svg'></img>
-        <p style="text-align: center;">Comparison of CREPS high-resolution image synthesis with Lanzcos upsampling on FFHQ.
         </p>
         <br>
 	    </div>
@@ -325,7 +345,7 @@
       <div class="content" id="video">
         <h2 style="text-align:center;">Supplementary Video</h2>
 				<center>
-					<iframe width="1000" height="688" src="https://drive.google.com/file/d/1PjMX90L_p74OBUkvADm57s7LMUh-iVgR/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width=80% height=55% src="https://drive.google.com/file/d/1PjMX90L_p74OBUkvADm57s7LMUh-iVgR/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</center>
       </div>    
     <div class="content" id="references">
