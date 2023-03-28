@@ -294,37 +294,56 @@
         </div>
         <hr>
         <p style="text-align: center;">By setting the coordinate grid appropriately, our generator is capable of synthesizing with various geometric configurations such as translation, zooming in/out, rotation or distortion.</p>
-        <split id="split1"> 
-          <center>
-            <video width="380" height="380" autoplay muted loop>
-              <source src="assets/translate_ffhq.mp4" type="video/mp4">
-            </video> 
-          </center>
-        </split>
-        <split id="split2">
-          <center>
-            <video width="380" height="380" autoplay muted loop>
-              <source src="assets/zoom_ffhq.mp4" type="video/mp4">
-            </video> 
-          </center>
-        </split>
-        <split id="split3"> 
-          <center>
-            <video width="380" height="380" autoplay muted loop>
-              <source src="assets/rotate_metface.mp4" type="video/mp4">
-            </video> 
-          </center>
-        </split>
-        <split id="split4">
-          <center>
-            <video width="380" height="380" autoplay muted loop>
-              <source src="assets/distort_afhqdog.mp4" type="video/mp4">
-            </video> 
-          </center> 
-        </split> 
+        <table style="text-align: center;" class="center">
+					<tr>
+						<td>
+							<div class="boxshadow">
+								<p style="text-align: center;">Translation</p>
+								<video width="425" height="425" autoplay muted loop>
+                  <source src="assets/translate_ffhq.mp4" type="video/mp4">
+                </video>
+							</a>
+							</div>
+						</td>
+						<td>
+							<div class="boxshadow">
+								<p style="text-align: center;">Zoom</p>
+								<video width="425" height="425" autoplay muted loop>
+                  <source src="assets/zoom_ffhq.mp4" type="video/mp4">
+                </video>
+							</a>
+							</div>
+						</td>
+						<td>
+					</tr>
+				</table>
+
+        <table style="text-align: center;" class="center">
+					<tr>
+						<td>
+							<div class="boxshadow">
+								<p style="text-align: center;">Rotation</p>
+								<video width="425" height="425" autoplay muted loop>
+                  <source src="assets/rotate_metface.mp4" type="video/mp4">
+                </video>
+							</a>
+							</div>
+						</td>
+						<td>
+							<div class="boxshadow">
+								<p style="text-align: center;">Distortion</p>
+								<video width="425" height="425" autoplay muted loop>
+                  <source src="assets/distort_afhqdog.mp4" type="video/mp4">
+                </video>
+							</a>
+							</div>
+						</td>
+						<td>
+					</tr>
+				</table> 
         <hr>
         <p style="text-align: center;">Comparison of CREPS high-resolution image synthesis with Lanzcos upsampling on FFHQ. As can be seen, CREPS outperforms traditional upsampling methods despite not being trained on super-resolution task.
-        <img class='summary-img' src='assets/sup_highres_crop.svg'></img>
+        <img class='summary-img' src='assets/sup_highres_crop.svg' style="width:90%;"></img>
         </p>
         <br>
 	    </div>
@@ -333,10 +352,10 @@
 				<div class="container" align="center">
           <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"> <img src="assets/ffhq512.svg" style="width:80%;"> </div>
-              <div class="swiper-slide"> <img src="assets/metface1024.svg" style="width:80%;"> </div>
-              <div class="swiper-slide"> <img src="assets/church256.svg" style="width:80%;"> </div>
-              <div class="swiper-slide"> <img src="assets/afhq1024.svg" style="width:80%;"> </div>
+              <div class="swiper-slide"> <img src="assets/ffhq512.svg" style="width:90%;"> </div>
+              <div class="swiper-slide"> <img src="assets/metface1024.svg" style="width:90%;"> </div>
+              <div class="swiper-slide"> <img src="assets/church256.svg" style="width:90%;"> </div>
+              <div class="swiper-slide"> <img src="assets/afhq1024.svg" style="width:90%;"> </div>
             </div>
             <br><br>
             <div class="swiper-pagination"></div>
@@ -346,7 +365,7 @@
       <div class="content" id="video">
         <h2 style="text-align:center;">Supplementary Video</h2>
 				<center>
-					<iframe width=80% height=55% src="https://drive.google.com/file/d/1PjMX90L_p74OBUkvADm57s7LMUh-iVgR/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="900" height="619.2" src="https://drive.google.com/file/d/1PjMX90L_p74OBUkvADm57s7LMUh-iVgR/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</center>
       </div>    
     <div class="content" id="references">
@@ -363,7 +382,7 @@
     </div>      
     <div class="content" id="acknowledgements">
           <p><strong>Acknowledgements</strong>:
-          We thank Lucy Chai, Michaël Gharbi, Eli Shechtman, Phillip Isola, and Richard Zhang for the work of Anyres GAN and its <a href="https://chail.github.io/anyres-gan/">template</a>  &#128512;. Also, we are heavily inspired by the work of CIPS from Ivan Anokhin, Kirill Demochkin, Taras Khakhulin, Gleb Sterkin, Victor Lempitsky, and Denis Korzhenkov.
+          We thank Lucy Chai, Micha&euml;l Gharbi, Eli Shechtman, Phillip Isola, and Richard Zhang for the work of Anyres GAN and its <a href="https://chail.github.io/anyres-gan/">template</a>  &#128512;. Also, we are heavily inspired by the work of CIPS from Ivan Anokhin, Kirill Demochkin, Taras Khakhulin, Gleb Sterkin, Victor Lempitsky, and Denis Korzhenkov.
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
